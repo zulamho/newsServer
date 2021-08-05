@@ -1,0 +1,28 @@
+<h1 class="news" >Одна новость</h1>
+
+<h3>{{singleNews.title}}</h3>
+<img src="https://static.dw.com/image/52625655_303.jpg" alt="">
+
+<p>
+    {{singleNews.text}}
+</p>
+
+<p>
+    <hr>
+     <b>Комментарий</b>
+     <hr>
+    {{#each comments}}
+    <div class="poster">
+       
+        
+        
+        <div class="text"> <b>{{author}}</b> : {{text}}</div>
+        
+       
+      </div>
+
+    {{/each}}
+</p>
+
+<h1 class="footer">Подвал</h1>
+

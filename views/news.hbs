@@ -1,0 +1,32 @@
+{{#each category}}
+    <li>
+        
+      <a href="/category/{{_id}}">{{name}}</a>
+        </li>
+
+    {{/each}}
+
+<h1>Все новости</h1>
+<ul>
+    {{#each data}}
+    <li>
+        
+        <a href="/news/{{_id}}">{{title}}</a>
+        </li>
+
+    {{/each}}
+</ul>
+
+
+<h1>Подвал</h1>
+
+<style>
+    body{
+        background-color: rgb(173, 173, 173);
+    }
+    h1{
+        background: #000;
+        color: white;
+        
+    }
+</style>
